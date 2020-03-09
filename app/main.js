@@ -13,11 +13,14 @@ class Main extends Component {
   constructor() {
     super()
     this.state = { 
+      audioPlaying: false,
       color: 'red',
       colorIndex: 0,
       spherePosition: { x: 0.0, y: 4, z: -10.0 }
     }
   }
+
+
 
   changeColor() {
     const colors = ['red', 'orange', 'yellow', 'green', 'blue']
@@ -27,8 +30,12 @@ class Main extends Component {
   }
 
   _handleClick() {
-    console.log('clicked')
+    if ( this.state.audioPlaying != true) {
+      let audio = new Audio("/haircuts.mp3")
+      audio.play()
+    }
     this.setState({
+      audioPlaying: true,
       colorIndex: (this.state.colorIndex + 1) % COLORS.length
     })
     console.log(COLORS[this.state.colorIndex])
