@@ -4,4 +4,4 @@
 - Use the VR Headset mode for full screen and VR Headsets
 - ctrl + alt + I to use the A-Frame Inspector
 
-## Thanks for checking out my repo!!!
+### Thanks for checking out my repo!!!
