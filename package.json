@@ -27,7 +27,7 @@
     "babel-preset-latest": "^6",
     "brunch": "^2",
     "clean-css-brunch": "^2",
-    "ghpages": "0.0.3",
+    "ghpages": "0.0.10",
     "uglify-js-brunch": "^2"
   }
 }
